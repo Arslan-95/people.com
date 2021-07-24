@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="menu_toggler">
+                    <div class="menu_toggler_container">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="rgba(0,0,0,.65)"><path d="M3 6h18v2.016H3V6zm0 6.984v-1.969h18v1.969H3zM3 18v-2.016h18V18H3z"></path></svg>
+                        </button>
+                        <span>Explore</span>
+                    </div>
+                    <div class="open_menu">
+                        
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="34" viewBox="0 0 80 32">
+                    <path fill="#20B1EA" fill-rule="evenodd" d="M72.379 21.936c1.002.006 1.53-.946 1.735-2.143h5.485c-.69 8.351-12.24 8.418-13.25 1.795V25.9h-7.964v-4.359c-.695 4.263-3.133 4.85-4.202 4.847-.897-.003-3.094-.74-3.907-2.986l.078 2.446c.017 1.518.987 2.48 2.017 2.618v3.531L43.078 32v-3.534c.78-.022 2.03-.788 2.044-2.492v-6.4c-.285 1.609-1.477 6.812-7.193 6.812-5.664 0-6.945-5.495-7.188-6.3-1.058 5.986-5.039 6.316-6.787 6.294-3.14-.04-5.02-2.2-5.066-2.248-1.889-1.918-2.252-4.823-2.176-7.956 0-.63.161-1.855.218-2.457-2.032 2.183-3.915 1.91-6.15 1.994l-1.878-.004v3.58c-.002 1.44.527 2.3 2.134 2.312v4.305H0v-4.215c1.607-.012 2.158-.95 2.156-2.39V6.536c0-.305-.075-2.279-2.15-2.294V0h11.91c2.244 0 3.84.684 4.915 1.53 1.986 1.565 2.383 4.254 2.544 6.245 3.034-2.64 10.223-3.228 11.427 4.67 1.3-6.018 5.735-6.473 6.773-6.478 1.865-.006 5.049 1.12 6.082 4.165V6.378h6.524v2.415c.48-1.823 2.09-2.813 3.722-2.823 1.574-.01 4.797 1.738 5.624 8.391V5.502c-.007-1.277-.788-1.937-2.066-1.93L57.457.039h7.592v14.328c.692-6.347 4.234-8.378 7.216-8.378 3.027 0 5.174 1.688 6.273 3.848 1.408 2.763 1.308 5.684 1.223 7.577l-9.237.002c-.033.363.001.972.03 1.533.078 1.572.594 2.994 1.825 2.987zm-48.251 0c1.001.006 1.53-.935 1.735-2.133l4.811-.002c-.243-1.2-.272-1.453-.299-2.386l-8.102.001c-.033.363.002.972.03 1.533.078 1.572.594 2.994 1.825 2.987zm11.788-5.724c0 3.184.572 5.747 2.009 5.767 1.476.019 2.009-2.583 2.009-5.767 0-3.185-.572-5.746-2.01-5.766-1.397-.02-2.008 2.581-2.008 5.766zm-11.821-5.88c-1.231-.006-1.787 1.5-1.865 3.071-.026.533-.036.557 0 .955h3.651c.036-.398.027-.422 0-.955-.078-1.571-.556-3.077-1.786-3.07zm48.25.117c-1.231-.007-1.748 1.383-1.826 2.954-.026.533-.036.557 0 .955h3.651c.036-.398.026-.422 0-.955-.078-1.571-.595-2.96-1.825-2.954zM50.527 19.11c0 1.602.394 2.818 1.517 2.818 1.255 0 2.004-1.7 2.004-5.698 0-4.39-.677-5.896-1.856-5.948-1.142-.05-1.725.92-1.665 2.923v5.905zM8.92 10.89h1.548c1.4-.04 1.89-.884 1.89-3.027 0-1.949-.685-2.962-1.89-2.962H8.92v5.989z"></path>
+                </svg>
+                <ul class="menu_items notVision">
+                    <li class="menu_item" number="1">
+                        <div class="menu_padding_item">
+                            News
+                        </div>
+                        <div class="dropdown_menu_item">
+                            <ul>
+                                <li><a href="https://people.com/tag/news/">All news</a></li>
+                                <li><a href="https://people.com/tag/coronavirus/">Coronavirus</a></li>
+                                <li><a href="https://people.com/crime/">Crime</a></li>
+                                <li><a href="https://people.com/human-interest/">Human Interest</a></li>
+                                <li><a href="https://people.com/politics/">Politics</a></li>
+                                <li><a href="https://people.com/tag/heroes/">Heroes</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu_item" number="2">
+                        <div class="menu_padding_item">
+                            Entertainment
+                        </div>
+                        <div class="dropdown_menu_item">
+                            <ul>
+                                <li><a href="https://people.com/entertainment/">All Entertainment</a></li>
+                                <li><a href="https://people.com/celebrity/">Celebrity</a></li>
+                                <li><a href="https://people.com/tv/">TV</a></li>
+                                <li><a href="https://people.com/movies/">Movies</a></li>
+                                <li><a href="https://people.com/music/">Music</a></li>
+                                <li><a href="https://people.com/country/">Country</a></li>
+                                <li><a href="https://people.com/country/">Awards</a></li>
+                                <li><a href="https://people.com/country/">Sports</a></li>
+                                <li><a href="https://people.com/theater/">Theater</a></li>
+                                <li><a href="https://people.com/books/">Books</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu_item" number="3">
+                        <a href="https://people.com/tag/coronavirus/">
+                            Coronavirus
+                        </a>
+                    </li>
+                    <li class="menu_item" number="4">
+                        <a href="https://people.com/royals/">
+                            Royals
+                        </a>
+                    </li>
+                    <li class="menu_item" number="5">
+                        <div class="menu_padding_item">
+                            Lifestyle
+                        </div>
+                        <div class="dropdown_menu_item">
+                            <ul>
+                                <li><a href="https://people.com/lifestyle/">All LifeStyle</a></li>
+                                <li><a href="https://people.com/style/">Style</a></li>
+                                <li><a href="https://people.com/fashion/">Fashion</a></li>
+                                <li><a href="https://people.com/beauty/">Beauty</a></li>
+                                <li><a href="https://people.com/health/">Health</a></li>
+                                <li><a href="https://people.com/parents/">Parents</a></li>
+                                <li><a href="https://people.com/home/">Home</a></li>
+                                <li><a href="https://people.com/real-estate/">Real Estate</a></li>
+                                <li><a href="https://people.com/pets/">Pets</a></li>
+                                <li><a href="https://people.com/food/">Food</a></li>
+                                <li><a href="https://people.com/shopping/">Shopping</a></li>
+                                <li><a href="https://people.com/tech/">Tech</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu_item" number="6">
+                        <a href="https://peopletv.com/">
+                            PeopleTv
+                        </a>
+                    </li>
+                    <li class="menu_item" number="7">
+                        <div class="menu_padding_item">
+                            Shopping
+                        </div>
+                        <div class="dropdown_menu_item">
+                            <ul>
+                                <li><a href="https://people.com/tag/shopping">All Shopping</a></li>
+                                <li><a href="https://people.com/coupons/">Coupons</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="menu_last_container">
+                    <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                    <span class="join_now">
+                        Join Now <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 255 255"><path d="M0 63.75l127.5 127.5L255 63.75z"></path></svg>
+                        <div class="join_now_dropdown notVision">
+                            <p>Account</p>
+                            <ul>
+                                <li><a href="https://people.com/account/signup?regSource=23009&returnURL=%2Ftv%2Fkylie-jenner-travis-scott-looked-fully-back-on-nyc-night%2F">Join Now</a></li>
+                                <li><a href="https://secure.people.com/common/profile/member/optout/">Newsletters</a></li>
+                                <li><a href="https://secure.people.com/common/profile/member/optout/">Manage Your Subscription</a></li>
+                            </ul>
+                            <p class="join_more">More</p>
+                            <ul>
+                                <li><a href="https://secure.people.com/common/profile/member/optout/">Give a Gift Subscription</a></li>
+                                <li><a href="https://webreader.people.com/">Premium</a></li>
+                            </ul>
+                        </div>
+                    </span>
+                    <span><a href="https://people.com/account/signin?regSource=23009&returnURL=%2Ftv%2Fkylie-jenner-travis-scott-looked-fully-back-on-nyc-night%2F">Login</a></span>
+                    <a href="https://www.magazine.store/?containerName=i93gdsm10&utm_source=people.com&utm_medium=owned&utm_campaign=i906ppr1w1615">Subscribe</a>
+                </div>
+            </div>
+        </nav>
+        <div class="header_alert_banner" style="display: none;">
+            <div class="container">
+                <h4>Paula Abdul on the Legacy of '90s Pop</h4>
+                <span>Listen to PEOPLE in the '90s, our new podcast</span>
+                <button>Listen Now</button>
+                <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"></path></svg>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="main_content">
+            <div class="breadcrumps">
+                <span><a href="https://people.com/">People.com</a></span>
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 48" aria-hidden="true" style="transform: rotate(180deg)" tabindex="-1">
+                    <path fill="#00aeef" d="M19.98 5L4 24.2l15.98 19.2.02-4.512L7.874 24.2 20 9.512z"></path>
+                  </svg>
+                <span><a href="https://people.com/tv/">TV</a></span>
+            </div>
+            <img class="content_logo" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F04%2F23%2FPEOPLE-EXCLUSIVE-YELLOW.png&w=1200&h=288&q=85" alt="">
+            <h1>
+                Kylie Jenner & Travis Scott Looked 'Fully Back On' During Night Out in NYC with Daughter Stormi: Source
+            </h1>
+            <p>
+                A onlooker tells PEOPLE that Kylie Jenner and Travis Scott were being "sweet and cute together" during the 2021 Parsons Benefit
+            </p>
+            <div class="post_info">
+                <span class="post_author">
+                    By <a href="https://people.com/author/gabrielle-chung/">Gabrielle Chung</a> and <a href="https://people.com/author/melody-chiu/">Melody Chiu</a>
+                </span>
+                <span class="post_date">
+                    June 15, 2021 11:13 PM
+                </span>
+            </div>
+            <div class="content_container">
+                <div class="left_sidebar">
+                    <ul>
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://people.com/tv/kylie-jenner-travis-scott-looked-fully-back-on-nyc-night/%3Futm_source=facebook.com%26utm_medium=social%26utm_campaign=social-share-article%26utm_content=20210621"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-facebook" width="36" height="36" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#3b5998" d="M13.774 8.824c.355-.012.71-.003 1.066-.003h.147V7.079c-.19-.018-.388-.043-.587-.052-.364-.015-.73-.033-1.094-.025-.557.01-1.084.139-1.544.45-.528.358-.818.86-.928 1.454a4.708 4.708 0 0 0-.064.747c-.01.39-.002.78-.002 1.172v.146H9v1.945h1.758v4.889h2.148v-4.88h1.752l.27-1.955h-.394c-.498.002-1.643 0-1.643 0s.006-.964.018-1.382c.017-.573.378-.748.865-.764"></path></svg><span>FB</span></a></li>
+                        <li><a href="https://www.twitter.com/intent/tweet?text=Kylie%20Jenner%20%26%20Travis%20Scott%20Looked%20%27Fully%20Back%20On%27%20During%20Night%20Out%20in%20NYC%20with%20Daughter%20Stormi%3A%20Source%20https://people.com/tv/kylie-jenner-travis-scott-looked-fully-back-on-nyc-night/%3Futm_source=twitter.com%26utm_medium=social%26utm_campaign=social-share-article"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-twitter" width="36" height="36" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#00AEF3" d="M9.793 15.25c-1.336-.049-2.17-1.041-2.392-1.847.372.073.739.058 1.103-.035.009-.002.018-.009.036-.017a2.571 2.571 0 0 1-1.669-1.222 2.65 2.65 0 0 1-.376-1.415c.36.2.738.311 1.144.323-.545-.406-.91-.937-1.059-1.615a2.72 2.72 0 0 1 .276-1.928c1.392 1.697 3.153 2.628 5.301 2.781-.016-.105-.031-.197-.041-.291a2.65 2.65 0 0 1 .375-1.74c.41-.664.993-1.077 1.743-1.204.864-.146 1.619.109 2.25.742.042.042.077.056.137.042a5.05 5.05 0 0 0 1.494-.595c.012-.006.023-.013.035-.018.002-.002.006-.001.017-.001a2.709 2.709 0 0 1-1.1 1.448 4.769 4.769 0 0 0 1.43-.399l.01.012c-.097.134-.193.27-.295.399a5.128 5.128 0 0 1-.933.92c-.03.022-.044.044-.044.084.015.395 0 .79-.047 1.182a8.026 8.026 0 0 1-.663 2.37 7.686 7.686 0 0 1-1.388 2.098 6.815 6.815 0 0 1-3.533 2.038 7.4 7.4 0 0 1-1.431.177 7.069 7.069 0 0 1-4.113-1.144l-.06-.04a5.039 5.039 0 0 0 3.793-1.105"></path></svg><span>Tweet</span></a></li>
+                        <li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20"><path d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"></path></svg><span>More</span></li>
+                    </ul>
+                </div>
+                <div class="post_content">
+                    <video src="https://playback.video.meredithcorp.io/416418724/6259186982001.vtt" controls="controls" autoplay></video>
+                    <p class="content_text">
+                        <a href="https://people.com/tag/kylie-jenner">Kylie Jenner</a> and <a href="https://people.com/tag/travis-scott">Travis Scott</a> spent some quality time together in the Big Apple with daughter <a href="https://people.com/tag/stormi-webster/">Stormi</a> on Tuesday.
+                    </p>
+                    <p class="content_text">
+                        The pair and their 3-year-old daughter had a family night out at the 72nd annual Parsons Benefit hosted by The New School in New York City, where Scott was honored alongside a handful of creatives.
+                    </p>
+                    <p class="content_text">
+                        Jenner, 23, and Scott, 30, posed for photographers together on the red carpet of the event, which was held at the The Rooftop at Pier 17 in the Seaport District. He wore a Bottega Veneta double-breasted dark suit, which he accessorized with two oversized necklaces. Jenner, on the other hand, wore a figure-fitting green gown with matching sheer gloves.
+                    </p>
+                    <p class="content_text">
+                        Their little fashionista, Stormi, stood by their side wearing a charcoal textured gown and some high top sneakers.
+                    </p>
+                    <p class="content_text">
+                        Inside the event, an onlooker tells PEOPLE Jenner and Scott were open with their affection towards one another.
+                    </p>
+                    <p class="content_text">
+                        "Travis and Kylie were being very sweet and cute together," the source says. "They were holding hands and seemed fully back on."
+                    </p>
+                    <div class="content_photo">
+                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F16%2FKylie-Jenner-and-Travis-Scott39.jpg&q=85" alt="">
+                        <p>Travis Scott and Kylie Jenner | CREDIT: ANDY KROPA/SHUTTERSTOCK</p>
+                    </div>
+                    <p class="content_text">
+                        At one point, Scott pulled Stormi onto his lap in a sweet father-daughter moment, according to the insider.
+                    </p>
+                    <p class="content_text">
+                        The source says Scott showed some love for Jenner during his acceptance speech too, saying, "Wifey, I love you so much." (Scott has <a href="https://people.com/parents/kylie-jenner-photos-travis-scott-stormi-we-love-you/">used the endearing term</a> to describe the <a href="https://people.com/tag/keeping-up-with-the-kardashians">Keeping Up with the Kardashians</a> star in the past.)
+                    </p>
+                    <div class="content_photo">
+                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F16%2FKylie-Jenner-and-Travis-Scott38.jpg" alt="">
+                        <p>Travis Scott, Kylie Jenner and Stormi | CREDIT: CRAIG BARRITT/GETTY</p>
+                    </div>
+                    <p class="content_text">
+                        Scott was presented with the Parsons Table Award at the event. He was honored alongside Macy's, Inc. chairman and CEO Jeff Gennette; Angela Ahrendts, Apple Retail's former SVP and Burberry's former CEO; artist Carrie Mae Weems; and designers Gabriela Hearst and Kerby Jean-Raymond.
+                    </p>
+                    <p class="content_text">
+                        "I'm very excited to be receiving this honor from The New School and grateful to be a part of this group of innovators," Scott said in a statement sent to the press before the event. "I've always tried to fuse fashion, technology and the arts into everything I do. These are all linked and a natural extension of my work. It has never been about specific brands or labels for me. It's about the vision. It's about making your own things, seeing what's out there, and never compromising."
+                    </p>
+                    <p class="content_text">
+                        <strong>
+                            <em>Want to get the biggest stories from</em> PEOPLE <em>every weekday? <a href="https://www.iheart.com/podcast/1119-people-every-day-76003809/"><strong>Subscribe to our new podcast</strong></a>, </em>PEOPLE Every Day, <em> to get the essential celebrity, entertainment and human interest news stories Monday through Friday.</em>
+                        </strong>
+                    </p>
+                    <p class="content_text">
+                        After the party, Jenner shared a photo of herself and Scott in her arms, simply captioning the shot, "24 hours in NYC."
+                    </p>
+                    <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/CQKgtRoHdrx/embed/?cr=1&amp;v=13&amp;wp=1200&amp;rd=https%3A%2F%2Fpeople.com&amp;rp=%2Ftv%2Fkylie-jenner-travis-scott-looked-fully-back-on-nyc-night%2F#%7B%22ci%22%3A0%2C%22os%22%3A3703.300000000745%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="955" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 600px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; padding: 0px;"></iframe>
+                    <p class="content_text">
+                        <strong>RELATED:</strong> <a href="https://people.com/parents/kylie-jenner-travis-scott-disneyland-daughter-stormi-kim-kardashian-chicago-dream-photos/">Kylie Jenner and Travis Scott Treat Daughter Stormi, 3, and Cousins to Disneyland Trip</a>
+                    </p>
+                    <p class="content_text">
+                        The family outing comes just weeks after Jenner and Scott <a href="https://people.com/parents/kylie-jenner-travis-scott-memorial-day-stormi-exclusive/">celebrated Memorial Day</a> with Stormi. In the videos shared to Jenner's Instagram Stories, Stormi and her dad were seen teaming up to take the Kylie Cosmetics founder in a playful water balloon fight.
+                    </p>
+                    <p class="content_text">
+                        "Kylie and Travis continue to spend a lot of quality family time together," another source told PEOPLe at the time, adding that Jenner is "very happy" with Scott.
+                    </p>
+                    <p class="content_text">
+                        "They are not putting any pressure on their relationship. They get along and things are great. They both want to be as present as possible for Stormi. Kylie and Travis have worked hard to create a great family situation," the insider said.
+                    </p>
+                    <p class="content_text">
+                        "They love each other," the source continued. "Everyone is very proud of how mature they are. Stormi is the happiest little girl. It's all benefitting her."
+                    </p>
+                    <p class="content_text">
+                        <strong>RELATED:</strong><a href="https://people.com/parents/travis-scott-shares-how-daughter-stormi-has-become-a-major-inspiration-in-his-life/">Travis Scott Shares How Daughter Stormi Has Become a 'Major Inspiration' in His Life</a>
+                    </p>
+                    <p class="content_text">
+                        Jenner and Scott <a href="https://people.com/tv/kylie-jenner-travis-scott-taking-a-break/">split</a> in October 2019 after two years of dating, but have remained friendly and often spend time together as they co-parent Stormi.
+                    </p>
+                    <p class="content_text">
+                        "<a href="https://people.com/parents/kylie-jenner-travis-scott-coparenting-daughter-stormi-harpers-bazaar/">We have such a great relationship</a>," Jenner said of the "Sicko Mode" rapper in March 2020 cover story with Harper's Bazaar. "We're like best friends. We both love Stormi and want what's best for her."
+                    </p>
+                    <p class="content_text">
+                        "We <a href="https://people.com/parents/kylie-jenner-travis-scott-split-custody-daughter-stormi-after-breakup-exclusive/">stay connected and coordinated</a>," she added. "I think about [my parents] in situations with Stormi, what they would do. They were very hands-on with me, and I want the same for Stormi."
+                    </p>
+                    <p class="content_text">
+                        In an interview with XXL magazine in December 2019, Scott said he will "<a href="https://people.com/music/travis-scott-will-always-love-kylie-jenner-after-split/">always" have love for Jenner</a>.
+                    </p>
+                    <p class="content_text">
+                        "I love her mommy and I always will," Scott said of Stormi's mom. "The hard part about relationships is just trying to be in one without a million outside voices interfering."
+                    </p>
+                    <div class="content_end_author">
+                        <h3>By <a href="https://people.com/music/travis-scott-will-always-love-kylie-jenner-after-split/">Gabrielle Chung</a> and <a href="https://people.com/author/melody-chiu/">Melody Chiu</a></h3>
+                    </div>
+                    <div class="exclusive_content_container">
+                        <div class="exclusive_content">
+                            <div class="exclusive_content_title">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F04%2F23%2FPEOPLE-EXCLUSIVE-YELLOW.png&w=1200&h=288&q=85" alt="">
+                                <button class="exclusive_content_button"><a href="https://people.com/tag/exclusive/">View All</a></button>
+                            </div>
+                            <div class="exclusive_items">
+                                <div class="exclusive_item">
+                                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F17%2Fcorbin-reid.jpg&w=1200&h=1200&c=sc&poi=face&q=85&rect=240%2C0%2C1240%2C1000" alt="">
+                                    <h4><a href="https://people.com/tv/run-the-world-corbin-reid-doesnt-agree-show-sex-and-the-city-comparisons/"> <em>Run the World</em>'s Corbin Reid Doesn't Agree with the Show's <em>SATC</em> Comparisons: It's Abo...</a></h4>
+                                </div>
+                                <div class="exclusive_item">
+                                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F19%2Frick-flairf-wwe.jpg&w=1200&h=1200&c=sc&poi=face&q=85&rect=501%2C51%2C1365%2C915" alt="">
+                                    <h4><a href="https://people.com/sports/ric-flair-charlotte-flair-lost-butterfly-robe-most-wanted-treasures-interview/">WWE Legend Ric Flair Is on the Hunt for His Long Lost 'Butterfly' Robe: 'I Never Saw It...</a></h4>
+                                </div>
+                                <div class="exclusive_item">
+                                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F19%2Flori-mossimo.jpg&w=1200&h=1200&c=sc&poi=%5B742%2C300%5D&q=85" alt="">
+                                    <h4><a href="https://people.com/travel/lori-loughlin-mossimo-giannulli-excited-to-travel-to-mexico-with-friends-source/">
+                                        Lori Loughlin and Mossimo Giannulli Were 'Excited' to Travel to Mexico with Friend...</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+        </div>
+    </div>
+    <div class="popular_in_tv">
+        <div class="popular_container">
+            <h2>POPULAR IN TV</h2>
+            <div class="popular_slider swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/parents/fathers-day-2021-kylie-jenner-tribute-travis-scott/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F20%2Fkylie-jenner.jpg&w=272&h=272&c=sc&poi=%5B604%2C530%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/parents/fathers-day-2021-kylie-jenner-tribute-travis-scott/">Kylie Jenner Snuggles Up to Travis Scott in Father's Da...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kylie-jenner-travis-scott-love-each-other-not-exclusive-source-says/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F05%2F21%2Fkylie-jenner-3-2000.jpg&w=272&h=272&c=sc&poi=%5B751%2C340%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kylie-jenner-travis-scott-love-each-other-not-exclusive-source-says/">Kylie Jenner and Travis Scott 'Love Each Other' but Are...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/stassie-karanikolaou-on-longtime-bff-kylie-jenner-were-stuck-with-each-other-forever/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2019%2F12%2Fkylie-jenner-stassie.jpg&w=272&h=272&c=sc&poi=%5B630%2C420%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/stassie-karanikolaou-on-longtime-bff-kylie-jenner-were-stuck-with-each-other-forever/">Stassie Karanikolaou on Longtime Best Friend Kylie...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M7 19V5l11 7z"></path></svg>
+                            </span>
+                            <span>
+                                Video
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/parents/watch-kylie-jenner-daughter-stormi-unbox-pink-balenciaga-pumps/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F08%2Fkylie-jenner-stormi-tout.jpg&w=272&h=272&q=85&c=tc" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/parents/watch-kylie-jenner-daughter-stormi-unbox-pink-balenciaga-pumps/">Watch Kylie Jenner's Daughter Stormi, 3,...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kris-jenner-praises-kourtney-kardashians-relationship-with-travis-barker/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F11%2Fkris-jenner.jpg&w=272&h=272&c=sc&poi=%5B705%2C160%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kris-jenner-praises-kourtney-kardashians-relationship-with-travis-barker/">Kris Jenner Praises Kourtney Kardashian's Relationship...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M7 19V5l11 7z"></path></svg>
+                            </span>
+                            <span>
+                                Video
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kendall-jenner-is-crazy-about-boyfriend-devin-booker-source/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F04%2Fkendall-jenner-1.jpg&w=272&h=272&c=sc&poi=%5B735%2C270%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kendall-jenner-is-crazy-about-boyfriend-devin-booker-source/">Kendall Jenner 'Is Crazy About' Boyfriend Devin...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M7 19V5l11 7z"></path></svg>
+                            </span>
+                            <span>
+                                Video
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/parents/kylie-jenner-travis-scott-disneyland-daughter-stormi-kim-kardashian-chicago-dream-photos/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F05%2F19%2Fcelebs-at-disney-kylie-travis.jpg&w=272&h=272&c=sc&poi=%5B461%2C600%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/parents/kylie-jenner-travis-scott-disneyland-daughter-stormi-kim-kardashian-chicago-dream-photos/"></a>Kylie Jenner and Travis Scott Treat Daughter Stormi, 3,...</h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M7 19V5l11 7z"></path></svg>
+                            </span>
+                            <span>
+                                Video
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/trevor-noah-and-minka-kelly-spotted-together-in-nyc/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F08%2Ftrevor-noah-2000.jpg&w=272&h=272&c=sc&poi=%5B766%2C320%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/trevor-noah-and-minka-kelly-spotted-together-in-nyc/">Trevor Noah and Minka Kelly Spotted Together in...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kim-kardashian-would-love-find-guy-share-life-with-after-kanye-west-divorce-source/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F10%2Fkim-kardashian-kanye-west.jpg&w=272&h=272&c=sc&poi=%5B720%2C370%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kim-kardashian-would-love-find-guy-share-life-with-after-kanye-west-divorce-source/">Kim Kardashian 'Would Love to Find a Guy to Sh...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M7 19V5l11 7z"></path></svg>
+                            </span>
+                            <span>
+                                Video
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kuwtk-reunion-kardashian-jenners-reflect-on-moments-they-regret/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F15%2Fkuwtk-reunion.jpg&w=272&h=272&q=85&c=tc&rect=120%2C40%2C624%2C544" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kuwtk-reunion-kardashian-jenners-reflect-on-moments-they-regret/">Kardashian-Jenners Reflect on the <em>KUWTK</em> Moments...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kourtney-kardashian-photo-travis-barker-blood-vial-instagram/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F04%2F20%2Fkourtney-travis.jpg&w=272&h=272&q=85&c=tc" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kourtney-kardashian-photo-travis-barker-blood-vial-instagram/">Kourtney Kardashian Reposts Photo Showing a...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M7 19V5l11 7z"></path></svg>
+                            </span>
+                            <span>
+                                Video
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kourtney-kardashian-travis-barker-spend-memorial-day-together/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F01%2Fbarker-kardashian-1.jpg&w=272&h=272&q=85&c=tc" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kourtney-kardashian-travis-barker-spend-memorial-day-together/">Kourtney Kardashian Spends Memorial Day wit...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M7 19V5l11 7z"></path></svg>
+                            </span>
+                            <span>
+                                Video
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kuwtk-reunion-kim-kardashian-avoids-specifics-about-kanye-west-split-denies-dating-van-jones/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F02%2F19%2Fkim-kanye-2000.jpg&w=272&h=272&c=sc&poi=%5B980%2C279%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kuwtk-reunion-kim-kardashian-avoids-specifics-about-kanye-west-split-denies-dating-van-jones/">Reunion: Kim Kardashian Avoids Specif...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M7 19V5l11 7z"></path></svg>
+                            </span>
+                            <span>
+                                Video
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kourtney-kardashian-makes-out-with-travis-barker-in-pda-snapshots/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F18%2Fkourtney-kardashian-1.jpg&w=272&h=272&c=sc&poi=%5B399%2C351%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kourtney-kardashian-makes-out-with-travis-barker-in-pda-snapshots/">Kourtney Kardashian Makes Out with Boyfriend Travis...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/naya-riveras-dad-says-her-son-josey-has-conversations-about-her/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F07%2F14%2FScreen-Shot-2020-07-14-at-10.57.36-AM.jpg&w=272&h=272&q=85&c=tc&rect=0%2C12%2C1068%2C1080" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/naya-riveras-dad-says-her-son-josey-has-conversations-about-her/">Naya Rivera's Dad Says Her Son Josey, 5½, Has...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kendall-jenner-boyfriend-devin-booker-celebrate-1-year-anniversary/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F13%2Fkendall-jenner-2.jpg&w=272&h=272&c=sc&poi=%5B217%2C43%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kendall-jenner-boyfriend-devin-booker-celebrate-1-year-anniversary/">Kendall Jenner and Boyfriend Devin Booker...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M7 19V5l11 7z"></path></svg>
+                            </span>
+                            <span>
+                                Video
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/kuwtk-reunion-kourtney-kardashian-denies-hooking-up-ex-scott-disick/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F18%2Fkourtney-scott-2.jpg&w=272&h=272&q=85&c=tc" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/kuwtk-reunion-kourtney-kardashian-denies-hooking-up-ex-scott-disick/">Kourtney Kardashian Denies Hooking Up with ...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/mark-consuelos-fathers-day-traditions/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F04%2F28%2Fkelly-ripa-1.jpg&w=272&h=272&q=85&c=tc" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/mark-consuelos-fathers-day-traditions/">Mark Consuelos Reveals Father's Day Traditions wit...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/jill-duggar-enjoys-rainy-day-with-her-two-sons/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F07%2Fjill-duggar-dillard-3.jpg&w=272&h=272&c=sc&poi=%5B765%2C568%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/jill-duggar-enjoys-rainy-day-with-her-two-sons/">Jill Duggar Dillard Enjoys 'Nice' Rainy Day with Her...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slider_item swiper-slide">
+                        <div class="image_container">
+                            <a href="https://people.com/tv/dove-cameron-first-pride-month-since-coming-out-publicly-special/">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F05%2F28%2Fdove-cameron-2000.jpg&w=272&h=272&c=sc&poi=%5B751%2C400%5D&q=85" alt="">
+                            </a>
+                        </div>
+                        <h3><a href="https://people.com/tv/dove-cameron-first-pride-month-since-coming-out-publicly-special/">Dove Cameron on 'Special' First Pride Month Since...</a></h3>
+                        <div class="slider_item_tag">
+                            <span>
+                                <svg viewBox="0 0 20 20" fill="rgba(0,0,0,.1)" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" tabindex="-1"><path fill="#000" d="M11.334 11.333V13H3v-1.667h8.334zm5-3.333v1.667H3V8h13.334z"></path></svg>
+                            </span>
+                            <span>
+                                Article
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="slider_navigation_left">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.016 11.016v1.969h-12.188l5.578 5.625-1.406 1.406-8.016-8.016 8.016-8.016 1.406 1.406-5.578 5.625h12.188z"></path></svg>
+                </div>
+                <div class="slider_navigation_right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-arrow-right"><path d="M12 3.984l8.016 8.016-8.016 8.016-1.406-1.406 5.578-5.625h-12.188v-1.969h12.188l-5.578-5.625z"></path></svg>
+                </div>
+            </div>
+            <p class="popular_tags_title">All Topics in TV</p>
+            <div class="swiper-container popular_tags_slider">
+                <ul class="popular_tags swiper-wrapper">
+                    <li class="popular_tag swiper-slide"><a href="https://people.com/tv/bridgerton/">Bridgerton</a></li>
+                    <li class="popular_tag swiper-slide"><a href="https://people.com/tv/people-picks-what-to-binge/">People Picks What To Binge</a></li>
+                    <li class="popular_tag swiper-slide"><a href="https://people.com/tv/people-puzzler/">People Puzzler</a></li>
+                    <li class="popular_tag swiper-slide"><a href="https://people.com/tv/winter-tv-preview/">Winter TV Preview</a></li>
+                </ul>
+                <div class="slider_navigation_left">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.016 11.016v1.969h-12.188l5.578 5.625-1.406 1.406-8.016-8.016 8.016-8.016 1.406 1.406-5.578 5.625h12.188z"></path></svg>
+                </div>
+                <div class="slider_navigation_right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-arrow-right"><path d="M12 3.984l8.016 8.016-8.016 8.016-1.406-1.406 5.578-5.625h-12.188v-1.969h12.188l-5.578-5.625z"></path></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <a href="https://people.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="139" height="56" viewBox="0 0 80 32">
+                    <path fill="#20B1EA" fill-rule="evenodd" d="M72.379 21.936c1.002.006 1.53-.946 1.735-2.143h5.485c-.69 8.351-12.24 8.418-13.25 1.795V25.9h-7.964v-4.359c-.695 4.263-3.133 4.85-4.202 4.847-.897-.003-3.094-.74-3.907-2.986l.078 2.446c.017 1.518.987 2.48 2.017 2.618v3.531L43.078 32v-3.534c.78-.022 2.03-.788 2.044-2.492v-6.4c-.285 1.609-1.477 6.812-7.193 6.812-5.664 0-6.945-5.495-7.188-6.3-1.058 5.986-5.039 6.316-6.787 6.294-3.14-.04-5.02-2.2-5.066-2.248-1.889-1.918-2.252-4.823-2.176-7.956 0-.63.161-1.855.218-2.457-2.032 2.183-3.915 1.91-6.15 1.994l-1.878-.004v3.58c-.002 1.44.527 2.3 2.134 2.312v4.305H0v-4.215c1.607-.012 2.158-.95 2.156-2.39V6.536c0-.305-.075-2.279-2.15-2.294V0h11.91c2.244 0 3.84.684 4.915 1.53 1.986 1.565 2.383 4.254 2.544 6.245 3.034-2.64 10.223-3.228 11.427 4.67 1.3-6.018 5.735-6.473 6.773-6.478 1.865-.006 5.049 1.12 6.082 4.165V6.378h6.524v2.415c.48-1.823 2.09-2.813 3.722-2.823 1.574-.01 4.797 1.738 5.624 8.391V5.502c-.007-1.277-.788-1.937-2.066-1.93L57.457.039h7.592v14.328c.692-6.347 4.234-8.378 7.216-8.378 3.027 0 5.174 1.688 6.273 3.848 1.408 2.763 1.308 5.684 1.223 7.577l-9.237.002c-.033.363.001.972.03 1.533.078 1.572.594 2.994 1.825 2.987zm-48.251 0c1.001.006 1.53-.935 1.735-2.133l4.811-.002c-.243-1.2-.272-1.453-.299-2.386l-8.102.001c-.033.363.002.972.03 1.533.078 1.572.594 2.994 1.825 2.987zm11.788-5.724c0 3.184.572 5.747 2.009 5.767 1.476.019 2.009-2.583 2.009-5.767 0-3.185-.572-5.746-2.01-5.766-1.397-.02-2.008 2.581-2.008 5.766zm-11.821-5.88c-1.231-.006-1.787 1.5-1.865 3.071-.026.533-.036.557 0 .955h3.651c.036-.398.027-.422 0-.955-.078-1.571-.556-3.077-1.786-3.07zm48.25.117c-1.231-.007-1.748 1.383-1.826 2.954-.026.533-.036.557 0 .955h3.651c.036-.398.026-.422 0-.955-.078-1.571-.595-2.96-1.825-2.954zM50.527 19.11c0 1.602.394 2.818 1.517 2.818 1.255 0 2.004-1.7 2.004-5.698 0-4.39-.677-5.896-1.856-5.948-1.142-.05-1.725.92-1.665 2.923v5.905zM8.92 10.89h1.548c1.4-.04 1.89-.884 1.89-3.027 0-1.949-.685-2.962-1.89-2.962H8.92v5.989z"></path>
+                </svg>
+            </a>
+            <div class="footer_columns">
+                <div class="footer_column">
+                    <h2>Magazines & More</h2>
+                </div>
+                <div class="footer_column">
+                    <h2>Learn More</h2>
+                    <ul class="sitemap">
+                        <li><a href="https://www.magazine.store/?containerName=i93gdsm10&utm_source=people.com&utm_medium=owned&utm_campaign=i906ppr3w1615">Subscribe</a></li>
+                        <li><a href="https://www.magazine.store/?containerName=i93gdsm10&utm_source=people.com&utm_medium=owned&utm_campaign=i906ppr3w1615">Advertise</a></li>
+                        <li><a href="https://www.meredithcontentlicensing.com/">Content Licensing</a></li>
+                        <li><a href="https://www.meredithcontentlicensing.com/">Sitemap</a></li>
+                        <li><a href="http://magazine.store/unidays?utm_source=people.com&utm_medium=internal&utm_campaign=people-unidays">Student Offer</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h2>Connect</h2>
+                    <ul class="social_links">
+                        <li><a href="https://www.facebook.com/peoplemag"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-facebook" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M13.774 8.824c.355-.012.71-.003 1.066-.003h.147V7.079c-.19-.018-.388-.043-.587-.052-.364-.015-.73-.033-1.094-.025-.557.01-1.084.139-1.544.45-.528.358-.818.86-.928 1.454a4.708 4.708 0 0 0-.064.747c-.01.39-.002.78-.002 1.172v.146H9v1.945h1.758v4.889h2.148v-4.88h1.752l.27-1.955h-.394c-.498.002-1.643 0-1.643 0s.006-.964.018-1.382c.017-.573.378-.748.865-.764"></path></svg></a></li>
+                        <li><a href="https://twitter.com/people"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-twitter" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M9.793 15.25c-1.336-.049-2.17-1.041-2.392-1.847.372.073.739.058 1.103-.035.009-.002.018-.009.036-.017a2.571 2.571 0 0 1-1.669-1.222 2.65 2.65 0 0 1-.376-1.415c.36.2.738.311 1.144.323-.545-.406-.91-.937-1.059-1.615a2.72 2.72 0 0 1 .276-1.928c1.392 1.697 3.153 2.628 5.301 2.781-.016-.105-.031-.197-.041-.291a2.65 2.65 0 0 1 .375-1.74c.41-.664.993-1.077 1.743-1.204.864-.146 1.619.109 2.25.742.042.042.077.056.137.042a5.05 5.05 0 0 0 1.494-.595c.012-.006.023-.013.035-.018.002-.002.006-.001.017-.001a2.709 2.709 0 0 1-1.1 1.448 4.769 4.769 0 0 0 1.43-.399l.01.012c-.097.134-.193.27-.295.399a5.128 5.128 0 0 1-.933.92c-.03.022-.044.044-.044.084.015.395 0 .79-.047 1.182a8.026 8.026 0 0 1-.663 2.37 7.686 7.686 0 0 1-1.388 2.098 6.815 6.815 0 0 1-3.533 2.038 7.4 7.4 0 0 1-1.431.177 7.069 7.069 0 0 1-4.113-1.144l-.06-.04a5.039 5.039 0 0 0 3.793-1.105"></path></svg></a></li>
+                        <li><a href="https://www.pinterest.com/people/"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-pinterest" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M11.018 14.094l-.028.096c-.455 1.786-.506 2.183-.975 3.011a9.21 9.21 0 0 1-.753 1.126c-.031.04-.061.092-.124.08-.068-.015-.074-.077-.08-.131a9.552 9.552 0 0 1-.1-1.635c.025-.714.113-.959 1.033-4.827a.267.267 0 0 0-.022-.162c-.22-.594-.263-1.197-.071-1.808.416-1.32 1.912-1.42 2.173-.331.162.673-.265 1.554-.592 2.856-.27 1.075.994 1.84 2.075 1.054.997-.723 1.385-2.456 1.311-3.685-.144-2.45-2.832-2.98-4.536-2.191-1.955.904-2.398 3.326-1.516 4.432.112.142.198.227.16.37-.056.222-.106.445-.167.666-.046.164-.183.224-.349.156a2.005 2.005 0 0 1-.816-.611c-.75-.928-.964-2.764.027-4.317 1.098-1.721 3.139-2.417 5.004-2.206 2.226.253 3.632 1.774 3.896 3.5.12.786.034 2.724-1.07 4.094-1.27 1.575-3.327 1.679-4.277.713-.073-.074-.132-.162-.203-.25"></path></svg></a></li>
+                        <li><a href="https://www.instagram.com/people/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M11.998 6c1.63 0 1.833.007 2.473.036.639.03 1.075.13 1.456.279a2.94 2.94 0 0 1 1.063.692c.333.333.538.668.691 1.062.149.382.25.818.28 1.456.028.64.035.844.035 2.473 0 1.63-.007 1.833-.036 2.473-.029.639-.13 1.075-.279 1.456a2.94 2.94 0 0 1-.692 1.063 2.94 2.94 0 0 1-1.062.691c-.381.149-.817.25-1.456.28-.64.028-.844.035-2.473.035s-1.833-.007-2.473-.036c-.638-.029-1.074-.13-1.456-.279a2.94 2.94 0 0 1-1.062-.692 2.94 2.94 0 0 1-.692-1.062c-.148-.381-.25-.817-.279-1.456-.03-.64-.036-.844-.036-2.473s.007-1.833.036-2.473c.03-.638.13-1.074.279-1.456a2.94 2.94 0 0 1 .692-1.062 2.94 2.94 0 0 1 1.062-.692c.382-.148.818-.25 1.456-.279.64-.03.844-.036 2.473-.036zm0 1.08c-1.601 0-1.791.007-2.424.036-.584.026-.902.124-1.113.206-.28.109-.48.239-.69.449-.21.21-.34.41-.449.69-.082.211-.18.529-.206 1.113-.03.633-.035.823-.035 2.424 0 1.602.006 1.791.035 2.424.026.585.124.902.206 1.114.109.28.239.48.449.69.21.21.41.34.69.448.211.082.529.18 1.113.207.633.028.822.034 2.424.034 1.602 0 1.791-.006 2.424-.034.585-.027.902-.125 1.114-.207.28-.109.48-.239.69-.449.21-.21.34-.41.448-.69.082-.21.18-.528.207-1.113.028-.633.034-.822.034-2.424 0-1.601-.006-1.791-.034-2.424-.027-.584-.125-.902-.207-1.113a1.858 1.858 0 0 0-.449-.69c-.21-.21-.41-.34-.69-.449-.21-.082-.528-.18-1.113-.206-.633-.03-.822-.035-2.424-.035zm0 1.838a3.08 3.08 0 1 1 0 6.16 3.08 3.08 0 0 1 0-6.16zm0 5.08a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.922-5.202a.72.72 0 1 1-1.44 0 .72.72 0 0 1 1.44 0z"></path></svg></a></li>
+                        <li><a href="https://www.youtube.com/user/people"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M10.227 13.95l4.307-2.233-4.307-2.248v4.482zm-3.8 2.487a1.613 1.613 0 0 1-1.064-1.035c-.462-1.268-.598-6.57.29-7.615a1.718 1.718 0 0 1 1.158-.616c2.393-.257 9.784-.22 10.636.086.5.18.854.506 1.046 1.006.505 1.31.522 6.079-.066 7.34-.16.344-.42.585-.75.758-.892.468-10.077.462-11.25.076z"></path></svg></a></li>
+                        <li><a href="https://www.snapchat.com/discover/People-Magazine/0407249978"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M12.146 6c.61 0 2.536.174 3.494 2.239.347.69.262 1.89.177 2.755v.258c.085 0 .085.084.262.084s.347-.084.61-.174h.176c.086 0 .177 0 .262.084.263.084.44.258.44.516s-.263.517-.702.69c-.085 0-.085.085-.177.085-.347 0-.7.084-.871.342-.086.174 0 .342.085.516 0 .084.872 1.98 2.799 2.323.176 0 .262.174.262.258v.084c-.177.342-.787.6-1.836.774 0 .085-.085.259-.085.343 0 .084-.085.174-.085.342-.086.174-.177.258-.348.258h-.347c-.171 0-.44-.084-.787-.084-.177 0-.347 0-.524.084a2.091 2.091 0 0 0-.964.516c-.524.258-1.048.6-1.92.6H11.896c-.872 0-1.396-.432-1.92-.774-.348-.258-.61-.432-.964-.516-.177 0-.348-.084-.524-.084-.348 0-.525.084-.787.084-.085 0-.262.084-.347.084-.263 0-.263-.174-.348-.258 0-.084-.085-.258-.085-.342s-.086-.259-.086-.343C5.787 16.57 5.177 16.312 5 15.97v-.084c0-.174.085-.258.262-.258 1.92-.342 2.799-2.239 2.799-2.323.085-.084.085-.258.085-.432-.177-.258-.524-.342-.786-.432-.086 0-.177-.084-.177-.084-.701-.258-.787-.517-.787-.775.086-.258.44-.432.701-.432h.263c.262.084.439.174.61.174.17 0 .262 0 .262-.084v-.342c-.086-.858-.177-2.065.176-2.665C9.262 6.168 11.274 6 11.798 6h.348z"></path></svg></a></li>
+                    </ul>
+                    <div class="footer_community">
+                        <strong>People is on Community!</strong>
+                        <p>Text us for exclusive photos and videos, royal news, and way more.</p>
+                        <div class="footer_tel">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" role="img" aria-hidden="true"><g fill="#000" fill-opacity=".65"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"></path></g></svg>
+                            <span>Text:</span>
+                            <a href="">212-479-1704</a>
+                        </div>
+                    </div>
+                    <button class="footer_button">
+                        <a href="https://my.community.com/people">
+                            NewsLetter sign up
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer_end">
+            <button class="footer_button">
+                <a href="https://my.community.com/people">
+                    Other Meredith Sites
+                </a>
+            </button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="104" height="24" viewBox="0 4 139 24"><path fill="#695E4A" d="M59.26 16.047V16c0-3.604 2.533-6.562 6.107-6.562 3.977 0 5.99 3.148 5.99 6.776 0 .264-.025.527-.048.811h-9.186c.31 2.053 1.753 3.198 3.6 3.198 1.396 0 2.39-.525 3.386-1.503l1.68 1.503c-1.184 1.432-2.818 2.364-5.114 2.364-3.622 0-6.416-2.649-6.416-6.539zm9.256-.931c-.19-1.861-1.279-3.318-3.173-3.318-1.752 0-2.984 1.361-3.243 3.318h6.416zm13.502.931V16c0-3.604 2.532-6.562 6.107-6.562 3.977 0 5.99 3.148 5.99 6.776 0 .264-.025.527-.048.811h-9.185c.306 2.053 1.75 3.198 3.597 3.198 1.397 0 2.392-.525 3.386-1.503l1.68 1.503c-1.183 1.432-2.817 2.364-5.112 2.364-3.622 0-6.415-2.649-6.415-6.539zm9.255-.931c-.189-1.861-1.278-3.318-3.172-3.318-1.752 0-2.984 1.361-3.243 3.318h6.415zm4.453.906v-.048c0-4.176 2.818-6.537 5.8-6.537 2.798 0 4.097 1.54 4.262 1.7v-6.24h2.862V22.3h-2.862v-1.456c-.238.242-1.51 1.72-4.263 1.72-2.934 0-5.799-2.365-5.799-6.542zm10.109 0v-.048c0-2.433-1.706-4.032-3.623-4.032-1.965 0-3.599 1.527-3.599 4.032v.048c0 2.435 1.658 4.034 3.6 4.034 1.916 0 3.622-1.624 3.622-4.034zm18.233 6.537c-3.681 0-5.704-1.15-5.704-4.701V4.898h2.864v4.801h2.841v2.481h-2.841v5.39c0 2.32 1.351 2.507 2.84 2.507v2.482zm2.514-17.662h2.864v6.252c.158-.2 1.259-1.712 3.59-1.712 3.018 0 4.767 2.003 4.767 4.843v8.02h-2.864v-7.137c0-1.891-1.04-3.102-2.745-3.102-1.657 0-2.748 1.146-2.748 3.102V22.3h-2.865V4.897h.001zM112.075 9.7h2.863v12.6h-2.863zM114.919 6.627v1.12h-2.844v-2.85h2.844zM38.002 9.7h2.864v1.493c.135-.16 1.407-1.756 3.692-1.756 2.6 0 3.531 1.63 3.835 2.218.215-.351 1.417-2.218 3.94-2.218 2.72 0 4.678 2.003 4.678 4.82V22.3h-2.864v-7.137c0-1.924-.995-3.102-2.604-3.102-1.563 0-2.604 1.129-2.604 3.102V22.3h-2.865v-7.137c0-1.956-1.017-3.102-2.604-3.102-1.58 0-2.604 1.146-2.604 3.102V22.3h-2.864V9.7zm35.75 0h2.863v2.042c.249-.424 1.224-2.283 4.428-2.283v2.97h-.61c-2.48 0-3.818 1.593-3.818 3.95v5.922h-2.862V9.699z"></path><path fill="#009BDA" d="M15.918 7.413l-3.232 3.232-2.082-2.082 3.232-3.232zM21.207 19.258l2.066 2.082 3.232-3.258-2.066-2.083zM19.628 3.65a2.265 2.265 0 0 1 3.232 0c.941.949.856 2.395 0 3.26l-1.653 1.666 2.065 2.082 1.654-1.666c1.016-1.025 2.454-.785 3.233 0 .979.987.805 2.447 0 3.257l-1.654 1.668 2.065 2.082 1.654-1.667c2.09-2.107 1.989-5.417 0-7.422a5.183 5.183 0 0 0-3.775-1.537 5.236 5.236 0 0 0-1.523-3.806c-1.954-1.97-5.26-2.12-7.363 0l-1.654 1.668 2.066 2.082 1.653-1.667zM15.91 13.917l2.065 2.082 3.232-3.258-2.066-2.083z"></path><path fill="#6FBE44" d="M10.611 23.422l3.233 3.26 2.065-2.083-3.232-3.259zM28.57 16l-2.066 2.082 1.654 1.667c.805.811.98 2.27 0 3.258-.778.785-2.217 1.025-3.232 0l-1.654-1.667-2.066 2.082 1.653 1.666c.857.864.942 2.311 0 3.26a2.265 2.265 0 0 1-3.232 0l-1.654-1.668-2.065 2.083 1.654 1.667c2.102 2.12 5.408 1.97 7.362 0a5.239 5.239 0 0 0 1.524-3.805 5.182 5.182 0 0 0 3.775-1.537c1.988-2.006 2.09-5.315 0-7.423L28.57 16zM15.91 18.082l3.232 3.258 2.065-2.082-3.232-3.259zM23.273 10.658l-2.066 2.083 3.232 3.258 2.066-2.082-3.232-3.259z"></path><path fill="#F7901E" d="M15.9 24.584l3.233-3.232 2.081 2.081-3.232 3.233zM12.19 28.348c-.805.811-2.253.987-3.232 0-.778-.784-1.016-2.234 0-3.258v-.002l1.653-1.666-2.066-2.082-1.653 1.666c-.856.863-2.291.949-3.232 0a2.31 2.31 0 0 1 0-3.259l1.652-1.666-2.064-2.082-1.653 1.667c-2.103 2.12-1.954 5.452 0 7.422a5.146 5.146 0 0 0 3.774 1.536c-.015.768.143 2.414 1.524 3.806 1.99 2.006 5.273 2.108 7.362 0l1.654-1.667-2.065-2.082-1.654 1.667zM13.844 16l-3.233 3.258 2.066 2.082 3.232-3.258L13.844 16zM8.546 10.658l-3.232 3.259 2.065 2.082 3.232-3.258z"></path><path fill="#ED174C" d="M10.611 19.258l-3.232-3.26-2.066 2.083 3.233 3.259zM3.66 12.25a2.31 2.31 0 0 1 0-3.258c.942-.95 2.377-.864 3.233 0l1.653 1.666 2.066-2.082L8.959 6.91v-.001c-1.016-1.023-.778-2.474 0-3.259.979-.987 2.427-.81 3.231 0l1.654 1.667 2.066-2.081-1.654-1.667c-2.09-2.107-5.373-2.006-7.362 0C5.512 2.96 5.354 4.607 5.37 5.374A5.145 5.145 0 0 0 1.595 6.91c-1.953 1.97-2.102 5.303 0 7.424L3.25 16l2.065-2.082L3.66 12.25zM17.983 5.33l3.232 3.232-2.082 2.081L15.9 7.412zM13.844 15.999l2.066-2.082-3.233-3.259-2.066 2.083 3.233 3.258z"></path><path fill="#583357" d="M17.985 5.324L15.92 7.39l-2.082-2.083 2.065-2.064z"></path><path fill="#BF272E" d="M5.323 13.926l2.065 2.065-2.082 2.082-2.066-2.065z"></path><path fill="#008F4C" d="M26.5 18.074l-2.066-2.065 2.083-2.082 2.065 2.065z"></path><path fill="#7A783E" d="M13.833 26.675L15.9 24.61l2.081 2.081-2.065 2.066z"></path><path fill="#443639" d="M23.281 10.667l-2.064 2.065-2.083-2.082L21.2 8.585z"></path><path fill="#803136" d="M10.618 19.263l2.066 2.066L10.6 23.41l-2.065-2.065z"></path><path fill="#5A3438" d="M10.62 8.585l2.066 2.065-2.083 2.083-2.066-2.065z"></path><path fill="#443639" d="M13.835 15.992l2.066-2.066 2.081 2.082-2.065 2.066z"></path><path fill="#2B6442" d="M23.283 21.35l-2.065 2.065-2.083-2.083 2.066-2.065z"></path></svg>
+            <p>© Copyright 2021 <a href="">Meredith Corporationthis</a>. People is a registered trademark of Meredith Corporation All Rights Reserved. People may receive compensation for some links to products and services on this website. Offers may be subject to change without notice.</p>
+            <ul>
+                <li><a href="https://www.meredith.com/nmg/privacy">Privacy Policy</a></li>
+                <li><a href="https://www.meredith.com/legal-ti/people/privacy_terms_service.html">Terms of Service</a></li>
+                <li><a href="https://www.meredith.com/adchoices">Ad Choices</a></li>
+                <li><a href="https://www.meredith.com/adchoices">Manage Push Notifications</a></li>
+                <li><a href="https://www.meredith.com/legal/web-accessibility">Web Accessibility</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="menu_window_container notVision">
+        <div class="menu_window">
+            <svg class="not_for_mobile close_window close_window_pc" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"></path></svg>
+            <div class="mobile_title">
+                <svg width="16" class="close_window" height="16" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"></path></svg>
+                <a href="https://people.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="24" viewBox="0 0 80 32">
+                        <path fill="#20B1EA" fill-rule="evenodd" d="M72.379 21.936c1.002.006 1.53-.946 1.735-2.143h5.485c-.69 8.351-12.24 8.418-13.25 1.795V25.9h-7.964v-4.359c-.695 4.263-3.133 4.85-4.202 4.847-.897-.003-3.094-.74-3.907-2.986l.078 2.446c.017 1.518.987 2.48 2.017 2.618v3.531L43.078 32v-3.534c.78-.022 2.03-.788 2.044-2.492v-6.4c-.285 1.609-1.477 6.812-7.193 6.812-5.664 0-6.945-5.495-7.188-6.3-1.058 5.986-5.039 6.316-6.787 6.294-3.14-.04-5.02-2.2-5.066-2.248-1.889-1.918-2.252-4.823-2.176-7.956 0-.63.161-1.855.218-2.457-2.032 2.183-3.915 1.91-6.15 1.994l-1.878-.004v3.58c-.002 1.44.527 2.3 2.134 2.312v4.305H0v-4.215c1.607-.012 2.158-.95 2.156-2.39V6.536c0-.305-.075-2.279-2.15-2.294V0h11.91c2.244 0 3.84.684 4.915 1.53 1.986 1.565 2.383 4.254 2.544 6.245 3.034-2.64 10.223-3.228 11.427 4.67 1.3-6.018 5.735-6.473 6.773-6.478 1.865-.006 5.049 1.12 6.082 4.165V6.378h6.524v2.415c.48-1.823 2.09-2.813 3.722-2.823 1.574-.01 4.797 1.738 5.624 8.391V5.502c-.007-1.277-.788-1.937-2.066-1.93L57.457.039h7.592v14.328c.692-6.347 4.234-8.378 7.216-8.378 3.027 0 5.174 1.688 6.273 3.848 1.408 2.763 1.308 5.684 1.223 7.577l-9.237.002c-.033.363.001.972.03 1.533.078 1.572.594 2.994 1.825 2.987zm-48.251 0c1.001.006 1.53-.935 1.735-2.133l4.811-.002c-.243-1.2-.272-1.453-.299-2.386l-8.102.001c-.033.363.002.972.03 1.533.078 1.572.594 2.994 1.825 2.987zm11.788-5.724c0 3.184.572 5.747 2.009 5.767 1.476.019 2.009-2.583 2.009-5.767 0-3.185-.572-5.746-2.01-5.766-1.397-.02-2.008 2.581-2.008 5.766zm-11.821-5.88c-1.231-.006-1.787 1.5-1.865 3.071-.026.533-.036.557 0 .955h3.651c.036-.398.027-.422 0-.955-.078-1.571-.556-3.077-1.786-3.07zm48.25.117c-1.231-.007-1.748 1.383-1.826 2.954-.026.533-.036.557 0 .955h3.651c.036-.398.026-.422 0-.955-.078-1.571-.595-2.96-1.825-2.954zM50.527 19.11c0 1.602.394 2.818 1.517 2.818 1.255 0 2.004-1.7 2.004-5.698 0-4.39-.677-5.896-1.856-5.948-1.142-.05-1.725.92-1.665 2.923v5.905zM8.92 10.89h1.548c1.4-.04 1.89-.884 1.89-3.027 0-1.949-.685-2.962-1.89-2.962H8.92v5.989z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="window_title">
+                <div class="window_logo">
+                    <a href="https://people.com/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="32" viewBox="0 0 80 32">
+                            <path fill="#20B1EA" fill-rule="evenodd" d="M72.379 21.936c1.002.006 1.53-.946 1.735-2.143h5.485c-.69 8.351-12.24 8.418-13.25 1.795V25.9h-7.964v-4.359c-.695 4.263-3.133 4.85-4.202 4.847-.897-.003-3.094-.74-3.907-2.986l.078 2.446c.017 1.518.987 2.48 2.017 2.618v3.531L43.078 32v-3.534c.78-.022 2.03-.788 2.044-2.492v-6.4c-.285 1.609-1.477 6.812-7.193 6.812-5.664 0-6.945-5.495-7.188-6.3-1.058 5.986-5.039 6.316-6.787 6.294-3.14-.04-5.02-2.2-5.066-2.248-1.889-1.918-2.252-4.823-2.176-7.956 0-.63.161-1.855.218-2.457-2.032 2.183-3.915 1.91-6.15 1.994l-1.878-.004v3.58c-.002 1.44.527 2.3 2.134 2.312v4.305H0v-4.215c1.607-.012 2.158-.95 2.156-2.39V6.536c0-.305-.075-2.279-2.15-2.294V0h11.91c2.244 0 3.84.684 4.915 1.53 1.986 1.565 2.383 4.254 2.544 6.245 3.034-2.64 10.223-3.228 11.427 4.67 1.3-6.018 5.735-6.473 6.773-6.478 1.865-.006 5.049 1.12 6.082 4.165V6.378h6.524v2.415c.48-1.823 2.09-2.813 3.722-2.823 1.574-.01 4.797 1.738 5.624 8.391V5.502c-.007-1.277-.788-1.937-2.066-1.93L57.457.039h7.592v14.328c.692-6.347 4.234-8.378 7.216-8.378 3.027 0 5.174 1.688 6.273 3.848 1.408 2.763 1.308 5.684 1.223 7.577l-9.237.002c-.033.363.001.972.03 1.533.078 1.572.594 2.994 1.825 2.987zm-48.251 0c1.001.006 1.53-.935 1.735-2.133l4.811-.002c-.243-1.2-.272-1.453-.299-2.386l-8.102.001c-.033.363.002.972.03 1.533.078 1.572.594 2.994 1.825 2.987zm11.788-5.724c0 3.184.572 5.747 2.009 5.767 1.476.019 2.009-2.583 2.009-5.767 0-3.185-.572-5.746-2.01-5.766-1.397-.02-2.008 2.581-2.008 5.766zm-11.821-5.88c-1.231-.006-1.787 1.5-1.865 3.071-.026.533-.036.557 0 .955h3.651c.036-.398.027-.422 0-.955-.078-1.571-.556-3.077-1.786-3.07zm48.25.117c-1.231-.007-1.748 1.383-1.826 2.954-.026.533-.036.557 0 .955h3.651c.036-.398.026-.422 0-.955-.078-1.571-.595-2.96-1.825-2.954zM50.527 19.11c0 1.602.394 2.818 1.517 2.818 1.255 0 2.004-1.7 2.004-5.698 0-4.39-.677-5.896-1.856-5.948-1.142-.05-1.725.92-1.665 2.923v5.905zM8.92 10.89h1.548c1.4-.04 1.89-.884 1.89-3.027 0-1.949-.685-2.962-1.89-2.962H8.92v5.989z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hamburger_section">
+                    <div class="social_links_container not_for_mobile">
+                        <ul class="social_links">
+                            <li><a href="https://www.facebook.com/peoplemag"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-facebook" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M13.774 8.824c.355-.012.71-.003 1.066-.003h.147V7.079c-.19-.018-.388-.043-.587-.052-.364-.015-.73-.033-1.094-.025-.557.01-1.084.139-1.544.45-.528.358-.818.86-.928 1.454a4.708 4.708 0 0 0-.064.747c-.01.39-.002.78-.002 1.172v.146H9v1.945h1.758v4.889h2.148v-4.88h1.752l.27-1.955h-.394c-.498.002-1.643 0-1.643 0s.006-.964.018-1.382c.017-.573.378-.748.865-.764"></path></svg></a></li>
+                            <li><a href="https://twitter.com/people"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-twitter" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M9.793 15.25c-1.336-.049-2.17-1.041-2.392-1.847.372.073.739.058 1.103-.035.009-.002.018-.009.036-.017a2.571 2.571 0 0 1-1.669-1.222 2.65 2.65 0 0 1-.376-1.415c.36.2.738.311 1.144.323-.545-.406-.91-.937-1.059-1.615a2.72 2.72 0 0 1 .276-1.928c1.392 1.697 3.153 2.628 5.301 2.781-.016-.105-.031-.197-.041-.291a2.65 2.65 0 0 1 .375-1.74c.41-.664.993-1.077 1.743-1.204.864-.146 1.619.109 2.25.742.042.042.077.056.137.042a5.05 5.05 0 0 0 1.494-.595c.012-.006.023-.013.035-.018.002-.002.006-.001.017-.001a2.709 2.709 0 0 1-1.1 1.448 4.769 4.769 0 0 0 1.43-.399l.01.012c-.097.134-.193.27-.295.399a5.128 5.128 0 0 1-.933.92c-.03.022-.044.044-.044.084.015.395 0 .79-.047 1.182a8.026 8.026 0 0 1-.663 2.37 7.686 7.686 0 0 1-1.388 2.098 6.815 6.815 0 0 1-3.533 2.038 7.4 7.4 0 0 1-1.431.177 7.069 7.069 0 0 1-4.113-1.144l-.06-.04a5.039 5.039 0 0 0 3.793-1.105"></path></svg></a></li>
+                            <li><a href="https://www.pinterest.com/people/"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-pinterest" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M11.018 14.094l-.028.096c-.455 1.786-.506 2.183-.975 3.011a9.21 9.21 0 0 1-.753 1.126c-.031.04-.061.092-.124.08-.068-.015-.074-.077-.08-.131a9.552 9.552 0 0 1-.1-1.635c.025-.714.113-.959 1.033-4.827a.267.267 0 0 0-.022-.162c-.22-.594-.263-1.197-.071-1.808.416-1.32 1.912-1.42 2.173-.331.162.673-.265 1.554-.592 2.856-.27 1.075.994 1.84 2.075 1.054.997-.723 1.385-2.456 1.311-3.685-.144-2.45-2.832-2.98-4.536-2.191-1.955.904-2.398 3.326-1.516 4.432.112.142.198.227.16.37-.056.222-.106.445-.167.666-.046.164-.183.224-.349.156a2.005 2.005 0 0 1-.816-.611c-.75-.928-.964-2.764.027-4.317 1.098-1.721 3.139-2.417 5.004-2.206 2.226.253 3.632 1.774 3.896 3.5.12.786.034 2.724-1.07 4.094-1.27 1.575-3.327 1.679-4.277.713-.073-.074-.132-.162-.203-.25"></path></svg></a></li>
+                            <li><a href="https://www.instagram.com/people/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M11.998 6c1.63 0 1.833.007 2.473.036.639.03 1.075.13 1.456.279a2.94 2.94 0 0 1 1.063.692c.333.333.538.668.691 1.062.149.382.25.818.28 1.456.028.64.035.844.035 2.473 0 1.63-.007 1.833-.036 2.473-.029.639-.13 1.075-.279 1.456a2.94 2.94 0 0 1-.692 1.063 2.94 2.94 0 0 1-1.062.691c-.381.149-.817.25-1.456.28-.64.028-.844.035-2.473.035s-1.833-.007-2.473-.036c-.638-.029-1.074-.13-1.456-.279a2.94 2.94 0 0 1-1.062-.692 2.94 2.94 0 0 1-.692-1.062c-.148-.381-.25-.817-.279-1.456-.03-.64-.036-.844-.036-2.473s.007-1.833.036-2.473c.03-.638.13-1.074.279-1.456a2.94 2.94 0 0 1 .692-1.062 2.94 2.94 0 0 1 1.062-.692c.382-.148.818-.25 1.456-.279.64-.03.844-.036 2.473-.036zm0 1.08c-1.601 0-1.791.007-2.424.036-.584.026-.902.124-1.113.206-.28.109-.48.239-.69.449-.21.21-.34.41-.449.69-.082.211-.18.529-.206 1.113-.03.633-.035.823-.035 2.424 0 1.602.006 1.791.035 2.424.026.585.124.902.206 1.114.109.28.239.48.449.69.21.21.41.34.69.448.211.082.529.18 1.113.207.633.028.822.034 2.424.034 1.602 0 1.791-.006 2.424-.034.585-.027.902-.125 1.114-.207.28-.109.48-.239.69-.449.21-.21.34-.41.448-.69.082-.21.18-.528.207-1.113.028-.633.034-.822.034-2.424 0-1.601-.006-1.791-.034-2.424-.027-.584-.125-.902-.207-1.113a1.858 1.858 0 0 0-.449-.69c-.21-.21-.41-.34-.69-.449-.21-.082-.528-.18-1.113-.206-.633-.03-.822-.035-2.424-.035zm0 1.838a3.08 3.08 0 1 1 0 6.16 3.08 3.08 0 0 1 0-6.16zm0 5.08a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.922-5.202a.72.72 0 1 1-1.44 0 .72.72 0 0 1 1.44 0z"></path></svg></a></li>
+                            <li><a href="https://www.youtube.com/user/people"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M10.227 13.95l4.307-2.233-4.307-2.248v4.482zm-3.8 2.487a1.613 1.613 0 0 1-1.064-1.035c-.462-1.268-.598-6.57.29-7.615a1.718 1.718 0 0 1 1.158-.616c2.393-.257 9.784-.22 10.636.086.5.18.854.506 1.046 1.006.505 1.31.522 6.079-.066 7.34-.16.344-.42.585-.75.758-.892.468-10.077.462-11.25.076z"></path></svg></a></li>
+                            <li><a href="https://www.snapchat.com/discover/People-Magazine/0407249978"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M12.146 6c.61 0 2.536.174 3.494 2.239.347.69.262 1.89.177 2.755v.258c.085 0 .085.084.262.084s.347-.084.61-.174h.176c.086 0 .177 0 .262.084.263.084.44.258.44.516s-.263.517-.702.69c-.085 0-.085.085-.177.085-.347 0-.7.084-.871.342-.086.174 0 .342.085.516 0 .084.872 1.98 2.799 2.323.176 0 .262.174.262.258v.084c-.177.342-.787.6-1.836.774 0 .085-.085.259-.085.343 0 .084-.085.174-.085.342-.086.174-.177.258-.348.258h-.347c-.171 0-.44-.084-.787-.084-.177 0-.347 0-.524.084a2.091 2.091 0 0 0-.964.516c-.524.258-1.048.6-1.92.6H11.896c-.872 0-1.396-.432-1.92-.774-.348-.258-.61-.432-.964-.516-.177 0-.348-.084-.524-.084-.348 0-.525.084-.787.084-.085 0-.262.084-.347.084-.263 0-.263-.174-.348-.258 0-.084-.085-.258-.085-.342s-.086-.259-.086-.343C5.787 16.57 5.177 16.312 5 15.97v-.084c0-.174.085-.258.262-.258 1.92-.342 2.799-2.239 2.799-2.323.085-.084.085-.258.085-.432-.177-.258-.524-.342-.786-.432-.086 0-.177-.084-.177-.084-.701-.258-.787-.517-.787-.775.086-.258.44-.432.701-.432h.263c.262.084.439.174.61.174.17 0 .262 0 .262-.084v-.342c-.086-.858-.177-2.065.176-2.665C9.262 6.168 11.274 6 11.798 6h.348z"></path></svg></a></li>
+                        </ul>
+                    </div>
+                    <span><a href="https://www.magazine.store/people/?utm_source=people.com&utm_medium=owned&utm_campaign=i905ppr5w1229">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M8 16h8v-3h1v4H7V7h4v1H8v8zm5-10h5v5h-1V8l-5 5-1-1 5-5h-3V6z"></path></svg></a></span>
+                    <span class="join_now">
+                        Join Now <svg class="for_mobile" width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L10.59.59 6 5.17 1.41.59 0 2l6 6z"></path></svg> <svg class="not_for_mobile" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 255 255"><path d="M0 63.75l127.5 127.5L255 63.75z"></path></svg>
+                        <div class="join_now_dropdown notVision">
+                            <p>Account</p>
+                            <ul>
+                                <li><a href="https://people.com/account/signup?regSource=23009&returnURL=%2Ftv%2Fkylie-jenner-travis-scott-looked-fully-back-on-nyc-night%2F">Join Now</a></li>
+                                <li><a href="https://secure.people.com/common/profile/member/optout/">Newsletters</a></li>
+                                <li><a href="https://w1.buysub.com/servlet/CSGateway?cds_mag_code=PPL">Manage Your Subscription</a></li>
+                            </ul>
+                            <p class="join_more">More</p>
+                            <ul>
+                                <li><a href="https://www.magazine.store/people/">Give a Gift Subscription</a></li>
+                                <li><a href="https://webreader.people.com/">Premium</a></li>
+                            </ul>
+                        </div>
+                    </span>
+                    <span><a href="https://people.com/account/signin?regSource=23009&returnURL=%2Ftv%2Fkylie-jenner-travis-scott-looked-fully-back-on-nyc-night%2F">Login</a></span>
+                    <span><a href="https://people.com/sweepstakes/">Sweepstakes</a></span>
+                </div>
+                <div class="social_links_container for_mobile">
+                    <div class="follow_us">Follow Us</div>
+                    <ul class="social_links">
+                        <li><a href="https://www.facebook.com/peoplemag"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-facebook" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M13.774 8.824c.355-.012.71-.003 1.066-.003h.147V7.079c-.19-.018-.388-.043-.587-.052-.364-.015-.73-.033-1.094-.025-.557.01-1.084.139-1.544.45-.528.358-.818.86-.928 1.454a4.708 4.708 0 0 0-.064.747c-.01.39-.002.78-.002 1.172v.146H9v1.945h1.758v4.889h2.148v-4.88h1.752l.27-1.955h-.394c-.498.002-1.643 0-1.643 0s.006-.964.018-1.382c.017-.573.378-.748.865-.764"></path></svg></a></li>
+                        <li><a href="https://twitter.com/people"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-twitter" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M9.793 15.25c-1.336-.049-2.17-1.041-2.392-1.847.372.073.739.058 1.103-.035.009-.002.018-.009.036-.017a2.571 2.571 0 0 1-1.669-1.222 2.65 2.65 0 0 1-.376-1.415c.36.2.738.311 1.144.323-.545-.406-.91-.937-1.059-1.615a2.72 2.72 0 0 1 .276-1.928c1.392 1.697 3.153 2.628 5.301 2.781-.016-.105-.031-.197-.041-.291a2.65 2.65 0 0 1 .375-1.74c.41-.664.993-1.077 1.743-1.204.864-.146 1.619.109 2.25.742.042.042.077.056.137.042a5.05 5.05 0 0 0 1.494-.595c.012-.006.023-.013.035-.018.002-.002.006-.001.017-.001a2.709 2.709 0 0 1-1.1 1.448 4.769 4.769 0 0 0 1.43-.399l.01.012c-.097.134-.193.27-.295.399a5.128 5.128 0 0 1-.933.92c-.03.022-.044.044-.044.084.015.395 0 .79-.047 1.182a8.026 8.026 0 0 1-.663 2.37 7.686 7.686 0 0 1-1.388 2.098 6.815 6.815 0 0 1-3.533 2.038 7.4 7.4 0 0 1-1.431.177 7.069 7.069 0 0 1-4.113-1.144l-.06-.04a5.039 5.039 0 0 0 3.793-1.105"></path></svg></a></li>
+                        <li><a href="https://www.pinterest.com/people/"><svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-pinterest" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M11.018 14.094l-.028.096c-.455 1.786-.506 2.183-.975 3.011a9.21 9.21 0 0 1-.753 1.126c-.031.04-.061.092-.124.08-.068-.015-.074-.077-.08-.131a9.552 9.552 0 0 1-.1-1.635c.025-.714.113-.959 1.033-4.827a.267.267 0 0 0-.022-.162c-.22-.594-.263-1.197-.071-1.808.416-1.32 1.912-1.42 2.173-.331.162.673-.265 1.554-.592 2.856-.27 1.075.994 1.84 2.075 1.054.997-.723 1.385-2.456 1.311-3.685-.144-2.45-2.832-2.98-4.536-2.191-1.955.904-2.398 3.326-1.516 4.432.112.142.198.227.16.37-.056.222-.106.445-.167.666-.046.164-.183.224-.349.156a2.005 2.005 0 0 1-.816-.611c-.75-.928-.964-2.764.027-4.317 1.098-1.721 3.139-2.417 5.004-2.206 2.226.253 3.632 1.774 3.896 3.5.12.786.034 2.724-1.07 4.094-1.27 1.575-3.327 1.679-4.277.713-.073-.074-.132-.162-.203-.25"></path></svg></a></li>
+                        <li><a href="https://www.instagram.com/people/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M11.998 6c1.63 0 1.833.007 2.473.036.639.03 1.075.13 1.456.279a2.94 2.94 0 0 1 1.063.692c.333.333.538.668.691 1.062.149.382.25.818.28 1.456.028.64.035.844.035 2.473 0 1.63-.007 1.833-.036 2.473-.029.639-.13 1.075-.279 1.456a2.94 2.94 0 0 1-.692 1.063 2.94 2.94 0 0 1-1.062.691c-.381.149-.817.25-1.456.28-.64.028-.844.035-2.473.035s-1.833-.007-2.473-.036c-.638-.029-1.074-.13-1.456-.279a2.94 2.94 0 0 1-1.062-.692 2.94 2.94 0 0 1-.692-1.062c-.148-.381-.25-.817-.279-1.456-.03-.64-.036-.844-.036-2.473s.007-1.833.036-2.473c.03-.638.13-1.074.279-1.456a2.94 2.94 0 0 1 .692-1.062 2.94 2.94 0 0 1 1.062-.692c.382-.148.818-.25 1.456-.279.64-.03.844-.036 2.473-.036zm0 1.08c-1.601 0-1.791.007-2.424.036-.584.026-.902.124-1.113.206-.28.109-.48.239-.69.449-.21.21-.34.41-.449.69-.082.211-.18.529-.206 1.113-.03.633-.035.823-.035 2.424 0 1.602.006 1.791.035 2.424.026.585.124.902.206 1.114.109.28.239.48.449.69.21.21.41.34.69.448.211.082.529.18 1.113.207.633.028.822.034 2.424.034 1.602 0 1.791-.006 2.424-.034.585-.027.902-.125 1.114-.207.28-.109.48-.239.69-.449.21-.21.34-.41.448-.69.082-.21.18-.528.207-1.113.028-.633.034-.822.034-2.424 0-1.601-.006-1.791-.034-2.424-.027-.584-.125-.902-.207-1.113a1.858 1.858 0 0 0-.449-.69c-.21-.21-.41-.34-.69-.449-.21-.082-.528-.18-1.113-.206-.633-.03-.822-.035-2.424-.035zm0 1.838a3.08 3.08 0 1 1 0 6.16 3.08 3.08 0 0 1 0-6.16zm0 5.08a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.922-5.202a.72.72 0 1 1-1.44 0 .72.72 0 0 1 1.44 0z"></path></svg></a></li>
+                        <li><a href="https://www.youtube.com/user/people"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M10.227 13.95l4.307-2.233-4.307-2.248v4.482zm-3.8 2.487a1.613 1.613 0 0 1-1.064-1.035c-.462-1.268-.598-6.57.29-7.615a1.718 1.718 0 0 1 1.158-.616c2.393-.257 9.784-.22 10.636.086.5.18.854.506 1.046 1.006.505 1.31.522 6.079-.066 7.34-.16.344-.42.585-.75.758-.892.468-10.077.462-11.25.076z"></path></svg></a></li>
+                        <li><a href="https://www.snapchat.com/discover/People-Magazine/0407249978"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#111" d="M12.146 6c.61 0 2.536.174 3.494 2.239.347.69.262 1.89.177 2.755v.258c.085 0 .085.084.262.084s.347-.084.61-.174h.176c.086 0 .177 0 .262.084.263.084.44.258.44.516s-.263.517-.702.69c-.085 0-.085.085-.177.085-.347 0-.7.084-.871.342-.086.174 0 .342.085.516 0 .084.872 1.98 2.799 2.323.176 0 .262.174.262.258v.084c-.177.342-.787.6-1.836.774 0 .085-.085.259-.085.343 0 .084-.085.174-.085.342-.086.174-.177.258-.348.258h-.347c-.171 0-.44-.084-.787-.084-.177 0-.347 0-.524.084a2.091 2.091 0 0 0-.964.516c-.524.258-1.048.6-1.92.6H11.896c-.872 0-1.396-.432-1.92-.774-.348-.258-.61-.432-.964-.516-.177 0-.348-.084-.524-.084-.348 0-.525.084-.787.084-.085 0-.262.084-.347.084-.263 0-.263-.174-.348-.258 0-.084-.085-.258-.085-.342s-.086-.259-.086-.343C5.787 16.57 5.177 16.312 5 15.97v-.084c0-.174.085-.258.262-.258 1.92-.342 2.799-2.239 2.799-2.323.085-.084.085-.258.085-.432-.177-.258-.524-.342-.786-.432-.086 0-.177-.084-.177-.084-.701-.258-.787-.517-.787-.775.086-.258.44-.432.701-.432h.263c.262.084.439.174.61.174.17 0 .262 0 .262-.084v-.342c-.086-.858-.177-2.065.176-2.665C9.262 6.168 11.274 6 11.798 6h.348z"></path></svg></a></li>
+                    </ul>
+                </div>
+                <div class="footer_community for_mobile">
+                    <strong>People is on Community!</strong>
+                    <p>Text us for exclusive photos and videos, royal news, and way more.</p>
+                    <div class="footer_tel">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" role="img" aria-hidden="true"><g fill="#000" fill-opacity=".65"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"></path></g></svg>
+                        <span>Text:</span>
+                        <a href="https://my.community.com/people">212-479-1704</a>
+                    </div>
+                </div>
+            </div>
+            <div class="window_columns">
+                <div class="window_column">
+                    <form action="">
+                        <label for="search">Search</label>
+                        <div>
+                            <input type="text" name="search" id="search" placeholder="Search">
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></button>
+                        </div>
+                    </form>
+                    <ul>
+                        <li number="0">Explore<svg width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L10.59.59 6 5.17 1.41.59 0 2l6 6z"></path></svg></li>
+                        <li number="1">News<svg width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L10.59.59 6 5.17 1.41.59 0 2l6 6z"></path></svg></li>
+                        <li number="2">Entertainment<svg width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L10.59.59 6 5.17 1.41.59 0 2l6 6z"></path></svg></li>
+                        <li number="3"><a href="https://people.com/tag/coronavirus/">Coronavirus</a></li>
+                        <li number="4"><a href="https://people.com/royals/">Royals</a></li>
+                        <li number="5">Lifestyle<svg width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L10.59.59 6 5.17 1.41.59 0 2l6 6z"></path></svg></li>
+                        <li number="6"><a href="https://peopletv.com/">PeopleTv</a></li>
+                        <li number="7">Shopping<svg width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L10.59.59 6 5.17 1.41.59 0 2l6 6z"></path></svg></li>
+                    </ul>
+                </div>
+                <div class="window_column window_content">
+                    <svg class="for_mobile to_back" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.016 11.016v1.969h-12.188l5.578 5.625-1.406 1.406-8.016-8.016 8.016-8.016 1.406 1.406-5.578 5.625h12.188z"></path></svg>
+                    <div class="window_content_title"><h2>News</h2><a href="">See <span>all news</span></a></div>
+                    <div class="window_content_columns">
+                        <div class="window_content_column">
+                            <ul class="window_subItems">
+                                <li class="window_content_submenu"><a href="">Coronavirus</a></li>
+                                <li class="window_content_submenu"><a href="">Crime</a></li>
+                                <li class="window_content_submenu"><a href="">Human Interest</a></li>
+                                <li class="window_content_submenu"><a href="">Politics</a></li>
+                                <li class="window_content_submenu"><a href="">Heroes</a></li>
+                            </ul>
+                        </div>
+                        <div class="window_content_column">
+                            <div class="content_featured">
+                                <div class="featured_img"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F03%2Fdemi-lovato.jpg&w=1200&h=1200&c=sc&poi=face&q=85" alt=""></div>
+                                <div class="feature_title">
+                                    <h3>
+                                        <a href="https://people.com/celebrity/stars-who-came-out-in-2021/">
+                                            Stars Who Opened Up About Their Sexuality and Gender Identity in 2021
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="explore_items">
+        <li class="explore_item">
+            <a href="https://www.instyle.com/featured/LOrealCampaign2021"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F15%2FGettyImages-992928872-150x150.jpg&w=1200&h=1200&c=sc&poi=face&q=85" alt=""></a>
+            <div>
+                <h3><a href="https://www.instyle.com/featured/LOrealCampaign2021">Beauty Is Back</a></h3>
+                <p>Everything you need to look and feel your best</p>
+                <a class="read_more_button" href="https://www.instyle.com/featured/LOrealCampaign2021">READ MORE</a>
+            </div>
+        </li>
+        <li class="explore_item">
+            <a href="https://people.com/pets/meowtalk-app-translate-cat-meows/"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F11%2F12%2Fcat-phone.jpg&w=1200&h=1200&c=sc&poi=face&q=85" alt=""></a>
+            <div>
+                <h3><a href="https://people.com/pets/meowtalk-app-translate-cat-meows/">Engineer Creates App To Translate Your Cat</a></h3>
+                <p>Find out what your cat is trying to tell you with a new cat app</p>
+                <a class="read_more_button" href="https://people.com/pets/meowtalk-app-translate-cat-meows/">READ MORE</a>
+            </div>
+        </li>
+        <li class="explore_item">
+            <a href="https://people.com/royals/prince-harry-and-princess-diana-photos/"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2016%2F05%2F06%2Fprincess-diana-21.jpg&w=1200&h=1200&c=sc&poi=face&q=85" alt=""></a>
+            <div>
+                <h3><a href="https://people.com/royals/prince-harry-and-princess-diana-photos/">The Sweetest Photos of Princes Harry with Diana</a></h3>
+                <p>Princess Diana died when Harry was just 12 years old</p>
+                <a class="read_more_button" href="https://people.com/royals/prince-harry-and-princess-diana-photos/">READ MORE</a>
+            </div>
+        </li>
+    </ul>
+    <div class="social_modal_container notVision">
+        <div class="social_modal">
+            <ul>
+                <li>
+                    <div>
+                        <a href="https://www.pinterest.com/pin/create/link/?url=https://people.com/tv/kylie-jenner-travis-scott-looked-fully-back-on-nyc-night/%3Futm_source=pinterest.com%26utm_medium=social%26utm_campaign=social-share-article%26utm_content=20210621&media=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F20%252F2021%252F06%252F16%252FKylie-Jenner-and-Travis-Scott39.jpg&description=">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-share icon-share-pinterest" width="36" height="36" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#bd081c" d="M11.018 14.094l-.028.096c-.455 1.786-.506 2.183-.975 3.011a9.21 9.21 0 0 1-.753 1.126c-.031.04-.061.092-.124.08-.068-.015-.074-.077-.08-.131a9.552 9.552 0 0 1-.1-1.635c.025-.714.113-.959 1.033-4.827a.267.267 0 0 0-.022-.162c-.22-.594-.263-1.197-.071-1.808.416-1.32 1.912-1.42 2.173-.331.162.673-.265 1.554-.592 2.856-.27 1.075.994 1.84 2.075 1.054.997-.723 1.385-2.456 1.311-3.685-.144-2.45-2.832-2.98-4.536-2.191-1.955.904-2.398 3.326-1.516 4.432.112.142.198.227.16.37-.056.222-.106.445-.167.666-.046.164-.183.224-.349.156a2.005 2.005 0 0 1-.816-.611c-.75-.928-.964-2.764.027-4.317 1.098-1.721 3.139-2.417 5.004-2.206 2.226.253 3.632 1.774 3.896 3.5.12.786.034 2.724-1.07 4.094-1.27 1.575-3.327 1.679-4.277.713-.073-.074-.132-.162-.203-.25"></path></svg>
+                        </a>
+                    </div>
+                    <a href="https://www.pinterest.com/pin/create/link/?url=https://people.com/tv/kylie-jenner-travis-scott-looked-fully-back-on-nyc-night/%3Futm_source=pinterest.com%26utm_medium=social%26utm_campaign=social-share-article%26utm_content=20210621&media=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F20%252F2021%252F06%252F16%252FKylie-Jenner-and-Travis-Scott39.jpg&description=">PINTEREST</a>
+                </li>
+                <li>
+                    <div>
+                        <a href="mailto:?subject=Kylie%20Jenner%20%26%20Travis%20Scott%20Looked%20%27Fully%20Back%20On%27%20During%20Night%20Out%20in%20NYC%20with%20Daughter%20Stormi%3A%20Source%20&body=https://people.com/tv/kylie-jenner-travis-scott-looked-fully-back-on-nyc-night/%3Futm_source=emailshare%26utm_medium=email%26utm_campaign=email-share-article%26utm_content=20210621">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><title>Mail</title><path d="M20.016 8.016v-2.016l-8.016 5.016-8.016-5.016v2.016l8.016 4.969zM20.016 3.984c1.078 0 1.969 0.938 1.969 2.016v12c0 1.078-0.891 2.016-1.969 2.016h-16.031c-1.078 0-1.969-0.938-1.969-2.016v-12c0-1.078 0.891-2.016 1.969-2.016h16.031z"></path></svg>
+                        </a>
+                    </div>
+                    <a href="mailto:?subject=Kylie%20Jenner%20%26%20Travis%20Scott%20Looked%20%27Fully%20Back%20On%27%20During%20Night%20Out%20in%20NYC%20with%20Daughter%20Stormi%3A%20Source%20&body=https://people.com/tv/kylie-jenner-travis-scott-looked-fully-back-on-nyc-night/%3Futm_source=emailshare%26utm_medium=email%26utm_campaign=email-share-article%26utm_content=20210621">EMAIL</a>
+                </li>
+                <li>
+                    <div>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M19 8h-2V5H7v3H5v7h2v4h10v-4h2V8zM8 6h8v2H8V6zm0 12v-5h8v5H8zm9-7c-.533 0-1-.467-1-1 0-.533.467-1 1-1s1 .467 1 1c0 .533-.467 1-1 1zm-2 4v1H9v-1h6z"></path></svg>
+                        </a>
+                    </div>
+                    <a href="">PRINT</a>
+                </li>
+            </ul>
+            <svg width="16" class="close_window" height="16" viewBox="0 0 14 14" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"></path></svg>
+        </div>
+    </div>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
